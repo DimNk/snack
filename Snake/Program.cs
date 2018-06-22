@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 namespace Snake
 {
     class Program
-    {
+    {        
         static void Main(string[] args)
         {
+            Point point = new Point(5, 16, '&');
+            point.SetPoint();
 
+            Console.ReadKey();
         }
     }
 }
