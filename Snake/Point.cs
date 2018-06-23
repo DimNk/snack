@@ -8,20 +8,20 @@ namespace Snake
 {
     class Point
     {
-        public int X1 { get; set; }
-        public int Y1 { get; set; }
-        public char Letter1 { get; set; }
+        int X1 { get; set; }
+        int Y1 { get; set; }
+        char Letter1 { get; set; }
         public Point() { }
-        public Point(int X1, int Y1, char Point1)
+        public Point(int X1, int Y1, char Letter1)
         {
             this.X1 = X1;
             this.Y1 = Y1;
-            this.Letter1 = Point1;
+            this.Letter1 = Letter1;
         }
-        public void Draw(int X1,int Y1,char Point1)
+        public void Draw(int X1,int Y1,char Letter1)
         {           
             Console.SetCursorPosition(X1, Y1);
-            Console.Write(Point1);
+            Console.Write(Letter1);
         }
         public void Draw()
         {
